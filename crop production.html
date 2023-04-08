@@ -18,7 +18,7 @@
 	<!-- <script type="text/javascript" src="popper.js"></script> -->
 	<!-- <script type="text/javascript" src="bootstrap.js"></script>	 -->
 	<!-- <link rel="stylesheet" type="text/css" href="D:/varsha practice/greenhouse project/Master.css"> -->
-
+<!-->
 	<style type="text/css">
 		 #img:hover{
 	height:400px;
@@ -37,6 +37,26 @@
 
 	
 	</style>
+<!-->
+
+	<script>
+		$(document).ready(function(){
+  		$('[data-toggle="popover"]').popover();      
+		});
+	</script>
+
+	<style type="text/css">
+		#plan:hover{
+			text-decoration: underline;
+			color:#ff471a; 
+		}
+
+		#zoom:hover{
+ 			-webkit-transform: scaleX(-1);
+  			transform: scaleX(-1);
+ 		}
+	</style>
+
 
 </head>
 <body>
@@ -61,14 +81,19 @@
 	
 	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
 		<div class="container-fluid">
-			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	    		<span class="navbar-toggler-icon"></span>
+	  		</button>
 			
 	  		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			
+
 				<ul class="navbar-nav mx-auto">
 					<li class="nav-item"><a class="nav-link"  href="index.html" style="width:110px; text-align:center;">HOME</a>
+
 					</li>
 					
-					<li class="nav-item active" style="border-bottom:3px solid #77b300; font-size:17px;"><a class="nav-link"  href="crop production.html" style="width:110px; text-align: center;">PRODUCTION</a>
+					<li class="nav-item active" style="border-bottom: 3px solid #77b300; font-size: 17px;"><a class="nav-link"  href="crop production.html" style="width:110px; text-align: center;">PRODUCTION</a>
 					</li>
 					
 					<li class="nav-item"><a class="nav-link"  href="soil management.html" style="width: 200px; text-align: center;">MANAEGEMENT</a></li>
